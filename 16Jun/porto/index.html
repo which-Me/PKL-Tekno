@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web portofolio</title>
+    <!-- cdn bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a.hover-nav:hover {
+      color: lightgreen !important;
+    }
+
+    #my-experience {
+      display: flex;
+      justify-content: space-around;
+      gap: 24px;
+      align-items: center;
+    }
+
+    #my-experience img {
+      max-width: 100%;
+      width: auto;
+      height: 100px;
+      object-fit: cover;
+      display: block;
+    }
+
+    #contact-me {
+      gap: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <header class="position-fixed w-100 bg-success">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container fw-bold text-light">
+          <a class="title fs-3 hover-nav nav-link" href="#home">RAFFI</a>
+          <div>
+            <ul class="navbar-nav :hover">
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link hover-nav text-light">PORTOFOLIO</a>
+              </li> -->
+              <li class="nav-item">
+                <a href="#about" class="nav-link hover-nav text-light">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link hover-nav text-light"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- home -->
+      <section
+        class="vh-100 bg-success d-flex flex-column align-items-center"
+        id="home"
+      >
+        <br />
+        <!-- image -->
+        <img
+          width="250"
+          height="250"
+          class="rounded-circle border border-black fixed-size-img mb-5 mt-5"
+          src="./mikuuu.jpg"
+          alt="image"
+        />
+        <div
+          class="sub-section d-flex align-items-center flex-column text-light"
+        >
+          <p class="fs-2">
+            Hello i<span class="text-warning">'</span>m
+            <br />
+            <span class="fw-bold">MUHAMAD RAFFI ARTHA RIVA</span>
+          </p>
+          <p
+            class="text-secondary-emphasis text-center text-wrap fs-6"
+            style="max-width: 800px"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            laborum quia, unde ratione, consectetur eum maiores nobis accusamus,
+            at nulla in. Saepe consectetur voluptatibus sit modi incidunt illo
+            doloribus nihil?
+          </p>
+        </div>
+      </section>
+      <!-- about -->
+      <section
+        class="vh-100 d-flex flex-column align-items-center bg-secondary-emphasis"
+        id="about"
+      >
+        <div class="py-5">
+          <p class="text-center fs-1 mt-5 fw-bold text-success">ABOUT ME</p>
+          <p
+            class="text-secondary-emphasis text-wrap text-start fs-5 text-light-emphasis"
+            style="max-width: 800px"
+          >
+            “I’m a passionate fullstack developer with a strong interest in web
+            technologies and system optimization. I specialize in building
+            modern applications using frameworks like React, Express, and
+            Laravel. I love exploring new tools, experimenting with different
+            technologies, and continuously challenging myself to grow beyond my
+            comfort zone.”
+          </p>
+          <p class="mt-5 fs-3 fw-bold text-success mb-5">- My experience</p>
+          <div id="my-experience">
+            <img
+              height="100"
+              class="fixed-size-img"
+              src="./react.png"
+              alt="experience 1"
+            />
+            <img
+              height="100"
+              class="fixed-size-img"
+              src="./node.webp"
+              alt="experience 3"
+            />
+            <img
+              height="100"
+              class="fixed-size-img"
+              src="./laravel.webp"
+              alt="experience 2"
+            />
+            <img
+              height="100"
+              class="fixed-size-img"
+              src="./linux.webp"
+              alt="experience 2"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+      <section
+        class="bg-success d-flex flex-column align-items-center bg-secondary-emphasis"
+        id="contact"
+      >
+        <div class="py-5">
+          <p class="text-center fs-1 mt-5 fw-bold text-light">CONTACT ME</p>
+          <div id="contact-me" class="">
+            <div>
+              <a
+                href="https://wa.me/+6289689349448?text=Hi,%20Raffi"
+                target="_blank"
+              >
+                <img src="./whatsapp.png" width="50" alt="whatsapp" />
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/which-Me" target="_blank">
+                <img src="./github.png" width="50" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer
+      class="mw-100 d-flex align-items-center justify-content-center bg-dark"
+    >
+      <p class="text-light">© 2025 Raffi artha riva</p>
+    </footer>
+    <!-- cdn bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
